@@ -1,0 +1,12 @@
+class Solution {
+    removeElement(nums, val) {
+        let pos = 0
+        for(let i = 0; i < nums.length; i++) {
+            if(nums[i] !== val) {
+                nums[pos] = nums[i]
+                pos++
+            }
+        }
+        return pos
+    }
+}
